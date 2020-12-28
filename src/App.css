@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  padding: 100px;
 }
 
 .App-logo {
@@ -26,6 +32,100 @@
 
 .App-link {
   color: #61dafb;
+}
+
+#input-box{
+  margin-bottom: 5px;
+  width: 438px;
+  height: 50px;
+  text-align: end;
+  font-size: x-large;
+  background-color: rgb(89, 155, 98);
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  padding-right: 2px;
+  padding-right: 2px;
+}
+
+::placeholder{
+  color: white;
+}
+
+.num-pad{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: x-large;
+  justify-content: center;
+}
+
+.num-pad-1-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.num-pad-1{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.num-pad-1 button{
+  flex: 0 0 32%;
+  margin-bottom: 5px;
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+.num-pad-2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.num-pad-2 button{
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+#btn-0{
+  flex: 2;
+}
+#btn-dot{
+  flex: 1;
+}
+
+.num-pad-3{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.num-pad-3 button{
+  font-size: 20px;
+}
+
+#btn-minus{
+  flex: 1;
+}
+
+#btn-plus{
+  flex: 2;
+}
+
+#btn-eql{
+  flex: 2;
+}
+
+.num-pad-4{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.num-pad-4 button{
+  margin-left: 4px;
+  font-size: 20px;
 }
 
 @keyframes App-logo-spin {
